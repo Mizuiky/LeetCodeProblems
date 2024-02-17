@@ -34,6 +34,33 @@
             Console.WriteLine($"Result{result3}");
 
             #endregion
+
+            #region Valid Parentheses 17 feb 2024
+
+            ValidParenthesesExercise v = new ValidParenthesesExercise();
+            bool result4 = v.IsValid("([{}]])");
+            Console.WriteLine($"Result{result4}");
+
+            result4 = v.IsValid("([]");
+            Console.WriteLine($"Result{result4}");
+
+            result4 = v.IsValid("[([([[}])])]");
+            Console.WriteLine($"Result{result4}");
+
+            result4 = v.IsValid("}{}");
+            Console.WriteLine($"Result{result4}");
+
+            result4 = v.IsValid("()");
+            Console.WriteLine($"Result{result4}");
+
+
+            result4 = v.IsValid("()[]{}");
+            Console.WriteLine($"Result{result4}");
+
+            result4 = v.IsValid("(]");
+            Console.WriteLine($"Result{result4}");
+
+            #endregion
         }
 
     }
