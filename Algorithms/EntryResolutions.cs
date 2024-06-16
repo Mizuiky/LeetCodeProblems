@@ -1,4 +1,6 @@
-﻿namespace ListaExercicios
+﻿using AlgorithmExercises;
+
+namespace ListaExercicios
 {
     public class EntryResolutions
     {   
@@ -61,7 +63,35 @@
             Console.WriteLine($"Result{result4}");
 
             #endregion
-        }
 
+            #region Fibonacci
+
+            Console.WriteLine("Fibonacci");
+
+            Fibonacci f = new Fibonacci();
+            //f.fibonnaci1(10);
+
+            Console.WriteLine($"O {6}-ésimo número Fibonacci é: {f.fibonnaciRecursivo(6)}");
+            f.mistNumber(6);
+            #endregion
+
+            Console.WriteLine("TESTE");
+            ClassTest test = new ClassTest();
+            int[] nums1 = { 4,1,2 };
+            int[] nums2 = { 1,3,4,2 };
+            string[] words2 = { "Hello", "Alaska", "Dad", "Peace" };
+
+            test.Intersection(nums1, nums2);
+            test.NextGreaterElement(nums1, nums2);
+            test.FindWords(words2);
+            test.IsPalindrome("A man, a plan, a canal: Panama");
+
+            test.ValidPalindrome("abca");
+            test.IsValidParentheses("(]");
+
+            string[] pairs = { "40 D", "41 E", "41 D", "40 E" };
+            test.BootsProblem(pairs);
+            test.CardProblem(19);
+        }
     }
 }
